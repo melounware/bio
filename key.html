@@ -3,8 +3,19 @@
 
 <body style="background-color:	#212121;">
 
-<input placeholder="Enter Key" class="input" name="text" type="text">
 
+
+<div class="content">
+<input placeholder="Enter Key" class="input" name="text" type="text">
+</div>
+
+<label>
+
+<a href="index.html">
+  <input placeholder="1234" required="" pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)[A-Za-z\d]{8,}$" class="input" type="password">
+</a>
+
+</label>
 
 </body>
 
@@ -31,6 +42,20 @@
   
 }
 
+
+
+
+.content {
+            top: -50;
+            right: 700;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            box-sizing: border-box;
+            position: relative;
+        }
 
 </style>
 
