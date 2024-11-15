@@ -1,21 +1,18 @@
 
 <html>
 
+
+
 <body style="background-color:	#212121;">
 
 
 
 <div class="content">
-<input placeholder="Enter Key" class="input" name="text" type="text">
+<input placeholder="Enter Key" class="input" name="text" type="text" id="keyInput" oninput="checkKey()">
 </div>
 
-<label>
 
-<a href="index.html">
-  <input placeholder="1234" required="" pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)[A-Za-z\d]{8,}$" class="input" type="password">
-</a>
 
-</label>
 
 </body>
 
@@ -57,6 +54,47 @@
             position: relative;
         }
 
+
+        .alert {
+            top: -50;
+            right: 500;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            box-sizing: border-box;
+            position: relative;
+        }
+      
+
+    
+        .error {
+            color: red;
+        }
+        .success {
+            color: green;
+        }
+
+
 </style>
 
- 
+<script>
+
+  const correctKey = "mimi";  
+
+function checkKey() {
+    const userKey = document.getElementById("keyInput").value;
+    const messageDiv = document.getElementById("message");
+
+    if (userKey === correctKey) {
+      window.open("index.html");
+        
+        messageDiv.className = "message success";
+    } else {
+       
+        messageDiv.className = "message error";
+    }
+}
+
+</script> 
