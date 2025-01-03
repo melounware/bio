@@ -1,7 +1,7 @@
 
 <html>
 
-
+<title>melo.ware</title>
 
 <body style="background-color:	#212121;">
 
@@ -53,19 +53,6 @@
             box-sizing: border-box;
             position: relative;
         }
-
-
-        .alert {
-            top: -50;
-            right: 500;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-            box-sizing: border-box;
-            position: relative;
-        }
       
 
     
@@ -88,11 +75,9 @@ function checkKey() {
     const messageDiv = document.getElementById("message");
 
     if (userKey === correctKey) {
-      window.open("index.html");
-        
+      window.open("secret.html")
         messageDiv.className = "message success";
     } else {
-       
         messageDiv.className = "message error";
     }
 }

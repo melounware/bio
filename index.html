@@ -6,7 +6,7 @@
     
     <h1>melounware</h1>
 
-    <h3>html / C++/ php</h3>
+    <h3>html / C# / cs</h3>
     <meta name="viewport" content="width=device-width, initial-scale=1" /> 
     
   </head>
@@ -37,7 +37,7 @@
 
     </div>
 
-    <p class="counter">⚆ <span id="visitor-count">Loading...</span></p>
+   
 
     
     <div id="music-container">
@@ -219,7 +219,7 @@ h3 {
         }
 
         .pre {
-            top: 20;
+            top: 10;
             right: -860;
             display: flex;
             flex-direction: column;
@@ -231,14 +231,6 @@ h3 {
             color: #fff;
         }
 
-        .counter {
-            position: relative;
-            top: -450;
-            right: -1600;
-            font-size: 30px;
-            font-weight: bold;
-            color: #fff;
-        }
 
         @font-face {
    font-family: League;
@@ -280,16 +272,12 @@ const audio = new Audio('Better in the Dark.mp3');
         });
 
 
+        let pageViews = localStorage.getItem('pageViews') || 0;
+  pageViews++;
+  localStorage.setItem('pageViews', pageViews);
+  console.log('This page has been opened ' + pageViews + ' times.');
 
-        fetch('counter.php')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('visitor-count').innerText = data;
-            })
-            .catch(error => {
-                console.error('Error fetching visitor count:', error);
-            });
-
+      
 
 </script>
 
