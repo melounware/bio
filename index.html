@@ -8,10 +8,11 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
   <body style="background-color:	#212121;">
+    <body onmousedown="return false" onselectstart="return false">
     <h1>melounware</h1>
 
     <h3>html / C# / CSS</h3>
-    <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+    
     
   </head>
 
@@ -22,17 +23,19 @@
      <div class="button-container">
       <a href="https://discord.gg/jEtzF8fZr2" class="btn" target="_blank">discord</a>
       <a href="https://github.com/melounware" class="btn" target="_blank">github</a>
-      <a href="" class="btn" target="_blank">:3</a>
+      <a class="btn" target="_blank" onclick="Alert()">:3</a>
      
 </div>
 
 <div class="pre">
-      <pre>
-              .            
-        \_____)\_____
-        /--v____ __`<         
-                )/           
-                '</pre>
+    <pre>
+         /\_____/\
+        /  o   o  \
+       ( ==  ^  == )
+        )         (
+       (           )
+      ( (  )   (  ) )
+     (__(__)___(__)__)</pre>
   </div>
   
 
@@ -57,23 +60,7 @@
   </body>
 
 
-
-
 </html>
-
-
-
-
-<style>
-
-
-
-  
-
-
-</style>
-
-
 
 <script>
 
@@ -102,7 +89,10 @@ const audio = new Audio('Better in the Dark.mp3');
   localStorage.setItem('pageViews', pageViews);
   console.log('This page has been opened ' + pageViews + ' times.');
 
-      
+  function Alert() {
+  alert("You like boys");
+}
+
 
 </script>
 
